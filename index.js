@@ -6,7 +6,7 @@ require("dotenv").config()
 
 mongoose.connect(process.env.MONGO_URL)
 const app = express()
-app.use(express.static("dist"))
+// app.use(express.static("dist"))
 
 app.use(cookieParser())
 app.use(express.json())
